@@ -1,0 +1,35 @@
+@use "src/utilities/variables" as var;
+
+.container {
+  min-height: 160px;
+  color: #3a5076;
+  padding: 2rem 4rem;
+  max-width: 320px;
+  flex: 1;
+  background: white;
+  border-radius: 15px;
+  @include var.flex(column, center, center);
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btns_container {
+  @include var.flex(row, center, center);
+  gap: 20px;
+}
+
+.inputs_wrapper {
+  @include var.flex(column);
+  width: 100%;
+  gap: 20px;
+}
+
+.file_wrapper {
+  @include var.flex(row);
+  max-width: 300px;
+  overflow: auto;
+}
+
+.links_wrapper {
+  @include var.flex(column, stretch, center);
+}

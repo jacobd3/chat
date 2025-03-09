@@ -1,0 +1,13 @@
+@use "/src/utilities/variables" as var;
+@import "/src/utilities/media_breakpoints";
+
+.auth_wrapper {
+  @include var.flex(column, center, center);
+  gap: 10px;
+}
+
+@media only screen and (max-width: $small) {
+  .auth_wrapper {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,20 @@
+@use "/src/utilities/variables" as var;
+
+.container {
+  display: flex;
+  max-width: 250px;
+}
+
+.avatar_wrapper {
+  grid-area: avatar;
+}
+.card_details_wrapper {
+  @include var.flex(column, center);
+  padding-left: 15px;
+}
+
+.message_wrapper p {
+  text-align: start;
+  margin: 0;
+  color: gray;
+}

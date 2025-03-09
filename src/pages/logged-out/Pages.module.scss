@@ -1,0 +1,6 @@
+@use "/src/utilities/variables" as var;
+
+.container {
+  @include var.flex(row, center, center);
+  height: 100vh;
+}

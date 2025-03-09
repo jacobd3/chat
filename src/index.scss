@@ -1,0 +1,47 @@
+@use "src/utilities/variables" as var;
+@import "./utilities/media_breakpoints";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(#2b5876, #4e4376);
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: white;
+}
+
+h1 {
+  font-weight: 400;
+  margin: 0px;
+}
+
+main {
+  flex: 8;
+  @include var.flex(column);
+}
+
+p {
+  margin: 15px;
+  font-size: 1.15rem;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+nav {
+  background: rgb(55, 55, 55);
+  flex: 0.45;
+  @include var.flex(column, space-between, center);
+  gap: 10px;
+  color: white;
+  padding: 25px 0px 10px 0px;
+}
+
+@media only screen and (max-width: $small) {
+  nav {
+    flex-direction: row;
+    padding: 5px 10px;
+  }
+}

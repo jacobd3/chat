@@ -1,0 +1,12 @@
+@import "/src/utilities/_media_breakpoints.scss";
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+@media only screen and (max-width: $small) {
+  .container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,20 @@
+@use "src/utilities/variables" as var;
+
+.form_wrapper {
+  flex: 0.5;
+  display: flex;
+  padding: 20px 10px 15px 20px;
+}
+
+.friends_wrapper {
+  @include var.flex(column, start, start);
+  flex: 8;
+  padding: 50px;
+  gap: 40px;
+}
+
+.friend_wrapper {
+  @include var.flex(row, space-between, stretch);
+  width: 300px;
+  gap: 20px;
+}

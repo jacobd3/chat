@@ -1,0 +1,20 @@
+.container {
+  background: rgba(124, 150, 171, 0.7);
+  border-radius: 40px;
+  max-width: 20vw;
+  margin: 0 1em 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+  font-size: 1.2em;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  word-break: break-word;
+  flex-shrink: 0;
+}
+
+.received_container {
+  background: rgba(65, 202, 226, 0.1);
+  align-self: flex-start;
+}

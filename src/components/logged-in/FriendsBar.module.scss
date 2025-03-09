@@ -1,0 +1,37 @@
+@use "src/utilities/variables" as var;
+@import "../../utilities/media_breakpoints";
+
+.container {
+  @include var.flex(column);
+  background: rgb(25, 25, 25);
+  flex: 2;
+  border-right: 1px solid gray;
+}
+
+.heading_wrapper {
+  flex: 0.5;
+  padding: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.active_friends_wrapper {
+  @include var.flex(row, start, center);
+  padding-left: 15px;
+  flex: 1.2;
+  gap: 20px;
+  padding: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.recent_friends_wrapper {
+  @include var.flex(column, start, start);
+  padding: 16px;
+  flex: 10;
+  gap: 10px;
+}
+
+@media only screen and (max-width: $small) {
+  .heading_wrapper {
+    display: none;
+  }
+}

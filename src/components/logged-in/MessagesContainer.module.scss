@@ -1,0 +1,10 @@
+@use "/src/utilities/variables" as var;
+
+.container {
+  flex: 8;
+  @include var.flex(column-reverse, end, flex-end);
+  gap: 15px;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  overflow: auto;
+}
